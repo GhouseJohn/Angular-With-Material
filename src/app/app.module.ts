@@ -4,9 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule} from "@angular/common/http";
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,HttpClientModule ],
+  imports:      [ BrowserModule, FormsModule,HttpClientModule ,MatButtonModule],
   declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ]
 })

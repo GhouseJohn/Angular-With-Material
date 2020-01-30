@@ -29,20 +29,33 @@
 
 
   <h1>This is json Data From Comming from Json Place Holder</h1>
-  <table>
+  <!-- <table>
   <thead>
     <tr >
+      <td>S.No</td>
       <th>userId</th>
       <th>id</th>
       <th>title</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor ="let _food of _JsonEmployee">
+    <tr *ngFor ="let _food of _JsonEmployee;let i=index">
+      <td>{{i+1}}</td>
       <td>{{_food.userId}}</td>
       <td>{{_food.id}}</td>
       <td>{{_food.title}}</td>
       <td>{{_food.completed}}</td>
     </tr>
   </tbody>
-</table>
+</table> -->
+
+
+<h3>Raised Buttons</h3>
+<div class="example-button-row">
+  <button mat-raised-button>Basic</button>
+  <button mat-raised-button color="primary">Primary</button>
+  <button mat-raised-button color="accent">Accent</button>
+  <button mat-raised-button color="warn">Warn</button>
+  <button mat-raised-button disabled>Disabled</button>
+  <a mat-raised-button routerLink=".">Link</a>
+</div>
