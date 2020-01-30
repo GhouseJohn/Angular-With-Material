@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import {MatButtonModule} from '@angular/material/button';
 import{MaterialModule} from './material-module'
-
+  import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,HttpClientModule ,MatButtonModule,MaterialModule],
+  imports:      [ BrowserModule, FormsModule,HttpClientModule ,MatButtonModule,MaterialModule,BrowserAnimationsModule],
   declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ]
 })
