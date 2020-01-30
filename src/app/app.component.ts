@@ -43,6 +43,7 @@ export class AppComponent  {
  
  displayedColumns = ['calories', 'carbs', 'fat', 'name','protein'];
    dataSource: MatTableDataSource<FoodClass>;
+   
      @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
 
 
@@ -56,7 +57,9 @@ export class AppComponent  {
    private errormsg:string;
   constructor(private _Myservice:MyServices){   
     FoodClass:FoodClass;
-    this._Myservice.getJsonData().subscribe(data=>{this._JsonEmployee=data, console.log("This is"+ this._JsonEmployee)},error=>this.errormsg=error)
+    this._Myservice.getJsonData().subscribe(data=>{this._JsonEmployee=data, console.log("This is"+ this._JsonEmployee)},error=>this.errormsg=error);
+    console.log("Hello")
+    console.log(this.dataSource);
 
   }
 
