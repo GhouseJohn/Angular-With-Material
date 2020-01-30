@@ -5,10 +5,10 @@ import { HttpClientModule} from "@angular/common/http";
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import {MatButtonModule} from '@angular/material/button';
-import { MatSliderModule } from '@angular/material/slider';
+import{MaterialModule} from './material-module'
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,HttpClientModule ,MatButtonModule,MatSliderModule],
+  imports:      [ BrowserModule, FormsModule,HttpClientModule ,MatButtonModule,MaterialModule],
   declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ]
 })
