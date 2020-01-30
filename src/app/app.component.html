@@ -1,0 +1,48 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen Hello:)
+</p>
+<button type="submit" (click)="GetDataFRomComponet()">Get Data From Componet</button>
+
+<button type="submit" (click)="HideAndShowevent()">Hide And Show</button>
+<div *ngIf="HideShow">
+  <h1>This is Hide And Show Componet {{_Datetime}} </h1>
+</div>
+
+<table *ngIf="ThisIsEmployee">
+  <thead>
+    <tr >
+      <th>name</th>
+      <th>calories</th>
+      <th>carbs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor ="let _food of MyData">
+      <td>{{_food.name}}</td>
+      <td>{{_food.calories}}</td>
+      <td>{{_food.carbs}}</td>
+
+    </tr>
+  </tbody>
+</table>
+
+
+  <h1>This is json Data From Comming from Json Place Holder</h1>
+  <table>
+  <thead>
+    <tr >
+      <th>userId</th>
+      <th>id</th>
+      <th>title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor ="let _food of _JsonEmployee">
+      <td>{{_food.userId}}</td>
+      <td>{{_food.id}}</td>
+      <td>{{_food.title}}</td>
+      <td>{{_food.completed}}</td>
+    </tr>
+  </tbody>
+</table>
